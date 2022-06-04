@@ -2,15 +2,30 @@ import type { NextPage } from "next"
 import Head from "next/head"
 import Image from "next/image"
 import styles from "../styles/Home.module.css"
-import { Organization, WithContext } from "schema-dts"
+import { WithContext, LocalBusiness, PostalAddress } from "schema-dts"
 
+const siteurl = "https://pacifique-habitat.vercel.app"
 const sitename = "Pacifique Habitat"
 
-const organization: WithContext<Organization> = {
+const address: PostalAddress = {
+  "@type": "PostalAddress",
+  addressLocality: "Tahiti",
+  postalCode: "98718",
+  streetAddress: "998W+6W Puna'auia, Polynésie française",
+  addressCountry: "PF",
+  addressRegion: "Puna'auia",
+}
+
+const organization: WithContext<LocalBusiness> = {
   "@context": "https://schema.org",
-  "@type": "Organization",
-  url: "https://pacifiquehabitat.pf",
-  logo: "https://pacifiquehabitat.pf/assets/logo-112.png",
+  "@type": "LocalBusiness",
+  url: siteurl,
+  logo: `${siteurl}/assets/logo-112.png`,
+  name: sitename,
+  image: `${siteurl}/assets/logo-1080.png`,
+  address,
+  priceRange: "$$$$",
+  telephone: "+689-40-832220",
 }
 
 const Home: NextPage = () => {
