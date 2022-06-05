@@ -1,5 +1,11 @@
-.hamburger {
+.hamburger,
+.contact.active,
+.list.active {
   display: none;
+}
+
+.contact.active::before {
+  content: unset;
 }
 
 .bar {
@@ -16,24 +22,37 @@
   .menu {
     position: absolute;
     left: -100%;
-    top: calc(var(--spacing) * 5);
+    top: calc(var(--spacing) * 6);
     flex-direction: column;
     background-color: var(--background-color);
     width: 100vw;
-    height: 100vh;
-    border-radius: 10px;
     text-align: center;
     transition: 0.4s;
     box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
     z-index: 1001;
   }
 
-  .menu.active {
+  .contact {
+    display: none;
+  }
+
+  .list.active {
+    display: block;
+  }
+
+  .contact.active {
+    display: flex;
+    width: 50%;
+    justify-content: space-evenly;
+  }
+
+  .menu.active,
+  .contact.active {
     left: 0;
   }
 
   .hamburger {
-    display: block;
+    display: flex;
     cursor: pointer;
   }
 

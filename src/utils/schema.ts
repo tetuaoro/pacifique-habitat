@@ -39,6 +39,7 @@ const organization: WithContext<HomeAndConstructionBusiness> = {
   priceRange: "€€€",
   telephone,
   hasMap: "https://maps.google.com/maps?cid=327015242727683984",
+  sameAs: "https://www.facebook.com/Pacifique-Habitat-294401990731485/",
   openingHoursSpecification: [
     {
       ...openingHoursSpecification,
