@@ -1,18 +1,18 @@
 import type { NextPage } from "next"
 import Head from "next/head"
 
-const Contact: NextPage = () => {
+const Secteur: NextPage = () => {
   return (
     <main className="container">
       <Head>
-        <title>Contact</title>
+        <title>Secteurs d'activité</title>
       </Head>
 
       <section>
-        <h1>Contact</h1>
+        <h1>Secteurs d'activité</h1>
       </section>
     </main>
   )
 }
 
-export default Contact
+export default Secteur

@@ -1,7 +1,8 @@
-import { WithContext, HomeAndConstructionBusiness, PostalAddress, OpeningHoursSpecification } from "schema-dts"
+import { WithContext, HomeAndConstructionBusiness, PostalAddress, OpeningHoursSpecification, AggregateRating } from "schema-dts"
 
 const siteurl = "https://pacifique-habitat.vercel.app"
 const sitename = "Pacifique Habitat"
+const telephone = "+68940832220"
 
 const address: PostalAddress = {
   "@type": "PostalAddress",
@@ -19,6 +20,13 @@ const openingHoursSpecification: OpeningHoursSpecification = {
   closes: "15:30",
 }
 
+const aggregateRating: AggregateRating = {
+  "@type": "AggregateRating",
+  ratingValue: 4.5,
+  bestRating: 5,
+  ratingCount: 1,
+}
+
 const organization: WithContext<HomeAndConstructionBusiness> = {
   "@context": "https://schema.org",
   "@type": "HomeAndConstructionBusiness",
@@ -27,8 +35,9 @@ const organization: WithContext<HomeAndConstructionBusiness> = {
   name: sitename,
   image: `${siteurl}/assets/logo-1080.png`,
   address,
+  aggregateRating,
   priceRange: "€€€",
-  telephone: "+68940832220",
+  telephone,
   hasMap: "https://maps.google.com/maps?cid=327015242727683984",
   openingHoursSpecification: [
     {
@@ -43,4 +52,4 @@ const organization: WithContext<HomeAndConstructionBusiness> = {
 }
 
 export default organization
-export { openingHoursSpecification, sitename, siteurl, address }
+export { openingHoursSpecification, sitename, siteurl, address, aggregateRating, telephone }
