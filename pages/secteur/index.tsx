@@ -5,11 +5,11 @@ const Secteur: NextPage = () => {
   return (
     <main className="container">
       <Head>
-        <title>Secteurs d'activité</title>
+        <title>Secteurs d&apos;activité</title>
       </Head>
 
       <section>
-        <h1>Secteurs d'activité</h1>
+        <h1>Secteurs d&apos;activité</h1>
       </section>
     </main>
   )
