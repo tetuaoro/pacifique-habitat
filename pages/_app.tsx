@@ -5,8 +5,10 @@ import Footer from "@components/footer"
 import Organization from "@utils/schema"
 
 import "@styles/pico.custom.css"
+import "@styles/header.css"
 
-function MyApp({ Component, pageProps }: AppProps) {
+
+function App({ Component, pageProps }: AppProps) {
   const Main = Component
   return (
     <div id="_layout">
@@ -20,4 +22,4 @@ function MyApp({ Component, pageProps }: AppProps) {
   )
 }
 
-export default MyApp
+export default App

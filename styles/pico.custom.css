@@ -45,6 +45,10 @@ html {
   width: 100%;
   margin-right: auto;
   margin-left: auto;
-  padding-top: var(--block-spacing-vertical);
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+#_layout > header {
   padding-bottom: var(--block-spacing-vertical);
 }
