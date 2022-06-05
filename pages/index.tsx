@@ -2,30 +2,48 @@ import type { NextPage } from "next"
 import Head from "next/head"
 import Image from "next/image"
 import styles from "../styles/Home.module.css"
-import { WithContext, LocalBusiness, PostalAddress } from "schema-dts"
+import { WithContext, HomeAndConstructionBusiness, PostalAddress, OpeningHoursSpecification } from "schema-dts"
 
 const siteurl = "https://pacifique-habitat.vercel.app"
 const sitename = "Pacifique Habitat"
 
 const address: PostalAddress = {
   "@type": "PostalAddress",
-  addressLocality: "Tahiti",
+  addressLocality: "Puna'auia",
   postalCode: "98718",
-  streetAddress: "998W+6W Puna'auia, Polynésie française",
+  streetAddress: "Puna'auia, Polynésie française",
   addressCountry: "PF",
   addressRegion: "Puna'auia",
 }
 
-const organization: WithContext<LocalBusiness> = {
+const openingHoursSpecification: OpeningHoursSpecification = {
+  "@type": "OpeningHoursSpecification",
+  dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday"],
+  opens: "06:30",
+  closes: "15:30",
+}
+
+const organization: WithContext<HomeAndConstructionBusiness> = {
   "@context": "https://schema.org",
-  "@type": "LocalBusiness",
+  "@type": "HomeAndConstructionBusiness",
   url: siteurl,
   logo: `${siteurl}/assets/logo-112.png`,
   name: sitename,
   image: `${siteurl}/assets/logo-1080.png`,
   address,
-  priceRange: "$$$$",
-  telephone: "+689-40-832220",
+  priceRange: "€€€",
+  telephone: "+68940832220",
+  hasMap: "https://maps.google.com/maps?cid=327015242727683984",
+  openingHoursSpecification: [
+    {
+      ...openingHoursSpecification,
+    },
+    {
+      ...openingHoursSpecification,
+      dayOfWeek: "Friday",
+      closes: "12:00",
+    },
+  ],
 }
 
 const Home: NextPage = () => {
