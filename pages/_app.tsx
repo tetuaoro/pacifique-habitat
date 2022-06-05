@@ -6,7 +6,7 @@ import Organization from "@utils/schema"
 
 import "@styles/pico.custom.css"
 import "@styles/header.css"
-
+import "@styles/footer.css"
 
 function App({ Component, pageProps }: AppProps) {
   const Main = Component
