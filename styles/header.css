@@ -1,10 +1,10 @@
 .hamburger,
-.contact.active,
-.list.active {
+.contact-sm,
+.list-sm {
   display: none;
 }
 
-.contact.active::before {
+.contact-sm::before {
   content: unset;
 }
 
@@ -36,18 +36,18 @@
     display: none;
   }
 
-  .list.active {
+  .list-sm {
     display: block;
   }
 
-  .contact.active {
+  .contact-sm {
     display: flex;
     width: 50%;
     justify-content: space-evenly;
   }
 
   .menu.active,
-  .contact.active {
+  .contact-sm {
     left: 0;
   }
 
