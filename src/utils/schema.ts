@@ -3,6 +3,8 @@ import { WithContext, HomeAndConstructionBusiness, PostalAddress, OpeningHoursSp
 const siteurl = "https://pacifique-habitat.vercel.app"
 const sitename = "Pacifique Habitat"
 const telephone = "+68940832220"
+const hasMap = "https://maps.google.com/maps?cid=327015242727683984"
+const sameAs = "https://www.facebook.com/Pacifique-Habitat-294401990731485/"
 
 const address: PostalAddress = {
   "@type": "PostalAddress",
@@ -22,9 +24,9 @@ const openingHoursSpecification: OpeningHoursSpecification = {
 
 const aggregateRating: AggregateRating = {
   "@type": "AggregateRating",
-  ratingValue: 4.5,
+  ratingValue: 4,
   bestRating: 5,
-  ratingCount: 1,
+  ratingCount: 3,
 }
 
 const organization: WithContext<HomeAndConstructionBusiness> = {
@@ -36,10 +38,10 @@ const organization: WithContext<HomeAndConstructionBusiness> = {
   image: `${siteurl}/assets/logo-1080.png`,
   address,
   aggregateRating,
-  priceRange: "€€€",
   telephone,
-  hasMap: "https://maps.google.com/maps?cid=327015242727683984",
-  sameAs: "https://www.facebook.com/Pacifique-Habitat-294401990731485/",
+  hasMap,
+  sameAs,
+  priceRange: "€€€",
   openingHoursSpecification: [
     {
       ...openingHoursSpecification,
@@ -53,4 +55,4 @@ const organization: WithContext<HomeAndConstructionBusiness> = {
 }
 
 export default organization
-export { openingHoursSpecification, sitename, siteurl, address, aggregateRating, telephone }
+export { openingHoursSpecification, sitename, siteurl, address, aggregateRating, telephone, hasMap, sameAs }

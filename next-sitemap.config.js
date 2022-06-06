@@ -3,6 +3,14 @@ const config = {
   siteUrl: "https://pacifique-habitat.vercel.app",
   generateRobotsTxt: true,
   changefreq: "monthly",
+  transform: async (_config, path) => {
+    const n = path.split("/").filter((f) => f.length > 0)
+    return {
+      loc: path,
+      priority: 1 - n.length * 0.1,
+      lastmod: new Date().toISOString(),
+    }
+  },
 }
 
 module.exports = config

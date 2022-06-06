@@ -1,6 +1,6 @@
 .footer {
   display: flex;
-  height: 300px;
+  min-height: 300px;
   background-color: rgb(33, 37, 41);
 }
 
@@ -15,19 +15,10 @@
 }
 
 .d4 {
-  flex-grow: 2;
+  flex-grow: 30;
 }
 
 .d2,
-.d3 {
-  width: 100%;
-  height: 100px;
-}
-
-.d2 {
-  flex-grow: 1;
-}
-
 .d3 {
   flex-grow: 1;
 }
@@ -47,4 +38,24 @@
   .footer {
     flex-direction: column;
   }
+}
+
+ul.nostyle li {
+  list-style: none;
+}
+
+a.nostyle {
+  color: inherit;
+  text-decoration: none;
+}
+
+a.nostyle:hover {
+  color: var(--primary);
+}
+
+.txt14 {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--secondary);
 }
