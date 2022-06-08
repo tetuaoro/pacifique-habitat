@@ -4,7 +4,7 @@ export default function Document() {
   return (
     <Html lang="fr" data-theme="light">
       <Head>
-        <link rel="icon" href="/favicon2.ico" />
+        <link rel="icon" href="/favicon.ico" />
         <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />

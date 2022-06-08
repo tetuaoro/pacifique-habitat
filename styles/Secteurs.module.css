@@ -1,0 +1,19 @@
+.relativeCard {
+  position: relative;
+  min-height: 300px;
+}
+
+.laCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.article,
+.article header {
+  border-radius: 10px;
+}
+
+.article header * {
+  border-radius: 10px 10px 0 0;
+}

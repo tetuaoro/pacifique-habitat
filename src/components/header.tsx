@@ -23,7 +23,7 @@ const Header = () => {
         <ul className={`menu ${menu && "active"}`}>
           <Li href="/" linkName="Accueil" onClick={closeMenu} />
           <Li href="/histoire" linkName="Notre Histoire" onClick={closeMenu} />
-          <Li href="/secteur" linkName="Secteurs d'activité" onClick={closeMenu} />
+          <Li href="/secteurs" linkName="Secteurs d'activité" onClick={closeMenu} />
 
           <Li onClick={closeMenu} className="list-sm" href="/services/resine" linkName="Applicateur de résine" />
           <Li onClick={closeMenu} className="list-sm" href="/services/piscine" linkName="Piscine" />

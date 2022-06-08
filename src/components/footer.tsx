@@ -56,7 +56,9 @@ const Footer = () => {
             <h6>GALLERIE</h6>
             <div className="gallery">
               {new Array(12).fill(0).map((_, k) => (
-                <Image key={k} alt={`Projet réalisé ${k + 1}`} src={`/assets/images/projets/${k + 1}.png`} width="100" height="100" layout="fixed" />
+                <span style={{ width: "100px", height: "100px", position: "relative" }}>
+                  <Image key={k} alt={`Projet réalisé ${k + 1}`} src={`/assets/images/projets/${k + 1}.png`} layout="fill" />
+                </span>
               ))}
             </div>
           </div>
