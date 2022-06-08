@@ -28,7 +28,7 @@ const Home: NextPage = () => {
         <center>
           <h1>{sitename.toUpperCase()}</h1>
         </center>
-        <Image priority src="/assets/images/index.png" width={940} height={440} layout="responsive" sizes="100vw" />
+        <Image alt="Couverture de la page principale" priority src="/assets/images/index.png" width={940} height={440} layout="responsive" sizes="100vw" />
         <center>
           <p style={margin}>
             {description +
