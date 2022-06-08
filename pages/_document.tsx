@@ -2,7 +2,7 @@ import { Html, Head, Main, NextScript } from "next/document"
 
 export default function Document() {
   return (
-    <Html lang="fr">
+    <Html lang="fr" data-theme="light">
       <Head>
         <link rel="icon" href="/favicon2.ico" />
         <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css" />
