@@ -5,6 +5,7 @@ const sitename = "Pacifique Habitat"
 const telephone = "+68940832220"
 const hasMap = "https://maps.google.com/maps?cid=327015242727683984"
 const sameAs = "https://www.facebook.com/Pacifique-Habitat-294401990731485/"
+const description = "Pacifique Habitat est une entreprise générale de construction et de rénovation de l'habitat, en allant du gros œuvre aux finitions en passant par le second œuvre."
 
 const address: PostalAddress = {
   "@type": "PostalAddress",
@@ -18,8 +19,8 @@ const address: PostalAddress = {
 const openingHoursSpecification: OpeningHoursSpecification = {
   "@type": "OpeningHoursSpecification",
   dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday"],
-  opens: "06:30",
-  closes: "15:30",
+  opens: "06:30:00",
+  closes: "15:30:00",
 }
 
 const aggregateRating: AggregateRating = {
@@ -32,15 +33,22 @@ const aggregateRating: AggregateRating = {
 const organization: WithContext<HomeAndConstructionBusiness> = {
   "@context": "https://schema.org",
   "@type": "HomeAndConstructionBusiness",
-  url: siteurl,
-  logo: `${siteurl}/assets/logo-112.png`,
-  name: sitename,
-  image: `${siteurl}/assets/logo-1080.png`,
   address,
   aggregateRating,
   telephone,
   hasMap,
   sameAs,
+  description,
+  url: siteurl,
+  logo: `${siteurl}/assets/logo-112.png`,
+  name: sitename,
+  image: [
+    `${siteurl}/assets/images/index.png`,
+    `${siteurl}/assets/images/histoire.png`,
+    `${siteurl}/assets/images/resines/1.png`,
+    `${siteurl}/assets/images/resines/2.png`,
+    `${siteurl}/assets/images/resines/3.png`,
+  ],
   priceRange: "€€€",
   openingHoursSpecification: [
     {
@@ -49,10 +57,10 @@ const organization: WithContext<HomeAndConstructionBusiness> = {
     {
       ...openingHoursSpecification,
       dayOfWeek: "Friday",
-      closes: "12:00",
+      closes: "12:00:00",
     },
   ],
 }
 
 export default organization
-export { openingHoursSpecification, sitename, siteurl, address, aggregateRating, telephone, hasMap, sameAs }
+export { openingHoursSpecification, sitename, siteurl, address, aggregateRating, telephone, hasMap, sameAs, description }

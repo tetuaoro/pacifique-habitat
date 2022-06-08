@@ -1,4 +1,5 @@
 import { hasMap, sameAs, telephone } from "@utils/schema"
+import Image from "next/image"
 import Link from "next/link"
 
 const Footer = () => {
@@ -32,9 +33,10 @@ const Footer = () => {
                 <li>
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-envelope-fill" viewBox="0 0 16 16">
                     <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z" />
-                  </svg>
-                  {" "}
-                  <a href="mailto:pacifique.habitat@mail.pf" className="nostyle">pacifique.habitat@mail.pf</a>
+                  </svg>{" "}
+                  <a href="mailto:pacifique.habitat@mail.pf" className="nostyle">
+                    pacifique.habitat@mail.pf
+                  </a>
                 </li>
               </ul>
             </div>
@@ -52,6 +54,11 @@ const Footer = () => {
         <div className="d4">
           <div className="container-fluid">
             <h6>GALLERIE</h6>
+            <div className="gallery">
+              {new Array(12).fill(0).map((_, k) => (
+                <Image src={`/assets/images/projets/${k + 1}.png`} width="100" height="100" layout="fixed" />
+              ))}
+            </div>
           </div>
         </div>
       </div>
@@ -91,7 +98,7 @@ const Footer = () => {
               </li>
               <li>
                 <small>
-                  <a>
+                  <a href="#">
                     Licence © 2022 Tous droits réservés{" "}
                     <span style={{ color: "var(--primary)" }}>
                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-hammer" viewBox="0 0 16 16">

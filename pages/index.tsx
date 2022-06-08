@@ -1,20 +1,40 @@
 import type { NextPage } from "next"
 import Head from "next/head"
-import { sitename } from "@utils/schema"
+import { description, sitename } from "@utils/schema"
+import Image from "next/image"
+
+import * as React from "react"
+
+declare global {
+  namespace JSX {
+    interface IntrinsicElements {
+      center: React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, HTMLElement>
+    }
+  }
+}
 
 const Home: NextPage = () => {
+  const margin: React.CSSProperties = {
+    marginTop: "var(--block-spacing-vertical)",
+  }
   return (
     <main className="container">
       <Head>
         <title>{sitename}</title>
-        <meta
-          name="description"
-          content="Pacifique Habitat est une entreprise générale de construction et de rénovation de l'habitat, en allant du gros œuvre aux finitions en passant par le second œuvre."
-        />
+        <meta name="description" content={description} />
       </Head>
 
-      <section>
-        <h1>{sitename}</h1>
+      <section style={margin} className="container-fluid">
+        <center>
+          <h1>{sitename.toUpperCase()}</h1>
+        </center>
+        <Image priority src="/assets/images/index.png" width={940} height={440} layout="responsive" sizes="100vw" />
+        <center>
+          <p style={margin}>
+            {description +
+              " Si vous cherchez un prestataire de service fiable et efficace, PACIFIQUE HABITAT répond a vos besoins. Qu'il s'agisse de petits travaux ou d'un projet de grande ampleur, nous sommes là pour vous proposer nos services spécialisés."}
+          </p>
+        </center>
       </section>
     </main>
   )

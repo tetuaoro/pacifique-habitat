@@ -15,7 +15,7 @@
 }
 
 .d4 {
-  flex-grow: 30;
+  flex-grow: 2;
 }
 
 .d2,
@@ -54,8 +54,17 @@ a.nostyle:hover {
 }
 
 .txt14 {
-  font-family: "Courier New", Courier, monospace;
+  font-family: "Montserrat", sans-serif;
   font-size: 14px;
-  font-weight: 400;
   color: var(--secondary);
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 10px;
+}
+
+.gallery * {
+  border-radius: 3px;
 }
