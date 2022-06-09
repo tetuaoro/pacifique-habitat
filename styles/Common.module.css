@@ -1,3 +1,39 @@
 .marginTop {
   margin-top: var(--block-spacing-vertical);
 }
+
+.relative {
+  position: relative;
+}
+
+.relativeCard {
+  position: relative;
+  min-height: 300px;
+}
+
+.laCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.article,
+.article header {
+  border-radius: 7px;
+}
+
+.article header * {
+  border-radius: 7px 7px 0 0;
+}
+
+.inlineArticle {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+@media only screen and (max-width: 768px) {
+  .inlineArticle {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+}

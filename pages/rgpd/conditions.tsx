@@ -1,13 +1,22 @@
 import Head from "next/head"
+import { sitename } from "@utils/schema"
+import commonCss from "@styles/Common.module.css"
+
+const title = "Conditions d'utilisation"
 
 const Conditions = () => {
   return (
     <main className="container">
       <Head>
-        <title>Conditions d&apos;utilisation</title>
+        <title>{title + " | " + sitename}</title>
       </Head>
-      <section>
-        <h1>Conditions d&apos;utilisation</h1>
+      <section className={commonCss.marginTop}>
+        <center>
+          <h1>{title.toUpperCase()}</h1>
+          <p>
+            <i>conditions standard</i>
+          </p>
+        </center>
       </section>
     </main>
   )

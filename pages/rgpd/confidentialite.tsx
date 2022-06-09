@@ -1,13 +1,22 @@
 import Head from "next/head"
+import { sitename } from "@utils/schema"
+import commonCss from "@styles/Common.module.css"
+
+const title = "Politique de confidentialité"
 
 const Confidentialite = () => {
   return (
     <main className="container">
       <Head>
-        <title>Politique de confidentialité</title>
+        <title>{title + " | " + sitename}</title>
       </Head>
-      <section>
-        <h1>Politique de confidentialité</h1>
+      <section className={commonCss.marginTop}>
+        <center>
+          <h1>{title.toUpperCase()}</h1>
+          <p>
+            <i>confidentialité standard</i>
+          </p>
+        </center>
       </section>
     </main>
   )

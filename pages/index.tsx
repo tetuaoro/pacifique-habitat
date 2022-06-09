@@ -34,10 +34,12 @@ const Home: NextPage = () => {
         <center>
           <h1>{sitename.toUpperCase()}</h1>
           <Image alt="Couverture de la page principale" priority src="/assets/images/index.png" width={940} height={440} layout="responsive" />
-          <p className={commonStyle.marginTop}>
-            {description +
-              " Si vous cherchez un prestataire de service fiable et efficace, PACIFIQUE HABITAT répond a vos besoins. Qu'il s'agisse de petits travaux ou d'un projet de grande ampleur, nous sommes là pour vous proposer nos services spécialisés."}
-          </p>
+          <article>
+            <p>
+              {description +
+                " Si vous cherchez un prestataire de service fiable et efficace, PACIFIQUE HABITAT répond a vos besoins. Qu'il s'agisse de petits travaux ou d'un projet de grande ampleur, nous sommes là pour vous proposer nos services spécialisés."}
+            </p>
+          </article>
         </center>
       </section>
     </main>
