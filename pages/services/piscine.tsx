@@ -12,7 +12,8 @@ const Piscine = () => {
     <main className="container">
       <Head>
         <title>{title + " | " + sitename}</title>
-        <meta property="og:url" content={siteurl} />
+        <meta name="description" content={description} />
+        <meta property="og:url" content={siteurl + "/services/piscine"} />
         <meta property="og:type" content="website" />
         <meta property="og:title" content={title + " | " + sitename} />
         <meta property="og:description" content={description} />
