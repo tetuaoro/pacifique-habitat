@@ -91,13 +91,13 @@ const Footer = () => {
                   </Link>
                 </small>
               </li>
-              <li>
+              {/* <li>
                 <small>
                   <Link href="/contact">
                     <a>Nous contacter</a>
                   </Link>
                 </small>
-              </li>
+              </li> */}
               <li>
                 <small>
                   <a href="#">
