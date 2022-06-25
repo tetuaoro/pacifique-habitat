@@ -29,7 +29,7 @@ const Content = () => {
               <br />
               <br />
               <br />
-              <span>pacifique-habitat.vercel.app</span>
+              <span>pacifique-habitat.rao-nagos.pf</span>
               <br />
               Pacifique habitat
               <br />

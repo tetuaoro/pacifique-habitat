@@ -26,7 +26,7 @@ const Content = () => {
             CONDITIONS GÉNÉRALES {"D'UTILISATION"} <br />
             DE:{" "}
             <small>
-              <span id="span_id_nom_du_site">pacifique-habitat.vercel.app</span>
+              <span id="span_id_nom_du_site">pacifique-habitat.rao-nagos.pf</span>
             </small>
           </h1>
         </center>

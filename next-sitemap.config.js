@@ -1,6 +1,6 @@
 /** @type {import('next-sitemap').IConfig} */
 const config = {
-  siteUrl: "https://pacifique-habitat.vercel.app",
+  siteUrl: "https://pacifique-habitat.rao-nagos.pf",
   generateRobotsTxt: true,
   changefreq: "monthly",
   transform: async (_config, path) => {

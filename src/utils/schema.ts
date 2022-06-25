@@ -1,6 +1,6 @@
 import { WithContext, HomeAndConstructionBusiness, PostalAddress, OpeningHoursSpecification, AggregateRating } from "schema-dts"
 
-const siteurl = "https://pacifique-habitat.vercel.app"
+const siteurl = "https://pacifique-habitat.rao-nagos.pf"
 const sitename = "Pacifique Habitat"
 const telephone = "+68940832220"
 const hasMap = "https://maps.google.com/maps?cid=327015242727683984"
