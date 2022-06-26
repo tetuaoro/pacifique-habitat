@@ -15,7 +15,7 @@ const Header = () => {
           <li>
             <Link href="/">
               <a>
-                <Image alt="logo de pacifique habitat" src="/assets/logo.webp" width={111} height={80} />
+                <Image priority alt="logo de pacifique habitat" src="/assets/logo.webp" width={111} height={80} />
               </a>
             </Link>
           </li>

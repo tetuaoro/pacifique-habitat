@@ -1,23 +1,8 @@
 import Image from "next/image"
 import Link from "next/link"
-import { isAndroid, isDesktop, isIOS } from "react-device-detect"
 import { fbLink, hasMap, telephone } from "@utils/schema"
-import { useEffect } from "react"
 
 const Footer = () => {
-  const fn = async () => {
-    console.log("call fn", isAndroid, isIOS, isDesktop)
-
-    /* const relatedApps = await navigator.getInstalledRelatedApps()
-    relatedApps.forEach((app) => {
-      console.log(app.id, app.platform, app.url)
-    }) */
-  }
-
-  useEffect(() => {
-    fn()
-  }, [])
-
   return (
     <footer>
       <div className="footer" style={{ paddingTop: "5rem" }}>
