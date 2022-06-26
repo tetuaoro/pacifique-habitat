@@ -4,6 +4,7 @@ export default function Document() {
   return (
     <Html lang="fr" data-theme="light">
       <Head>
+        <meta name="msvalidate.01" content="8F52A7F7888EC43AEDC7200647CCE906" />
         <link rel="icon" href="/favicon.ico" />
         <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
