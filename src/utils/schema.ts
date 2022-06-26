@@ -4,6 +4,7 @@ const siteurl = "https://pacifique-habitat.rao-nagos.pf"
 const sitename = "Pacifique Habitat"
 const telephone = "+68940832220"
 const hasMap = "https://maps.google.com/maps?cid=327015242727683984"
+const fbLink = "https://facebook.com/pg/294401990731485"
 const sameAs = "https://www.facebook.com/Pacifique-Habitat-294401990731485/"
 const description = "Pacifique Habitat est une entreprise générale de construction et de rénovation de l'habitat, en allant du gros œuvre aux finitions en passant par le second œuvre."
 
@@ -63,4 +64,4 @@ const organization: WithContext<HomeAndConstructionBusiness> = {
 }
 
 export default organization
-export { openingHoursSpecification, sitename, siteurl, address, aggregateRating, telephone, hasMap, sameAs, description }
+export { openingHoursSpecification, sitename, siteurl, address, aggregateRating, telephone, hasMap, sameAs, description, fbLink }

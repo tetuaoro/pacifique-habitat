@@ -20,6 +20,7 @@ const Home: NextPage = () => {
       <Head>
         <title>{sitename}</title>
         <meta name="description" content={description} />
+        <meta property="fb:app_id" content="294401990731485" />
         <meta property="og:url" content={siteurl} />
         <meta property="og:type" content="website" />
         <meta property="og:title" content={sitename} />

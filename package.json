@@ -1,6 +1,6 @@
 {
   "name": "pacifique-habitat",
-  "version": "0.1.8",
+  "version": "0.1.8.1",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -13,6 +13,7 @@
     "next": "12.1.6",
     "next-sitemap": "^3.0.5",
     "react": "18.1.0",
+    "react-device-detect": "^2.2.2",
     "react-dom": "18.1.0",
     "schema-dts": "^1.1.0"
   },
