@@ -28,7 +28,7 @@ const Home: NextPage = () => {
         <meta property="og:image" content={`${siteurl}/assets/images/index.png`} />
         <meta property="og:image:width" content="940" />
         <meta property="og:image:height" content="440" />
-        <script type="application/ld+json">{JSON.stringify(Organization)}</script>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(Organization) }} />
       </Head>
 
       <section className={commonStyle.marginTop}>
